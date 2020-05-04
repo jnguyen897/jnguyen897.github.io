@@ -1,0 +1,70 @@
+.hidden {
+	display:none;
+}
+
+.unhidden {
+	display:block;
+}
+
+body {
+	background-color:#648AB3;
+}
+
+h1 {
+	text-align:center;
+	color: white;
+	font-weight: 100;
+	font-size: 48px;
+	font-family: arial, sans-serief;
+}
+
+#lightbox {
+	position:fixed;
+	top:0px;
+	left:0px; 
+	width:100%;
+	height:100%;
+	background-color:rgb(0,0,0,0.7);
+}
+
+#positionBigImage {
+	position:absolute;
+	top:50px;
+	left:0px; 
+	width:100%;
+}
+
+#boundaryBigImage {
+	position:relative;
+	margin-left:auto;
+	margin-right:auto;
+	width:517px;
+}
+
+#x {
+	position:absolute;
+	top:0px;
+	right:0px; 
+}
+
+#main {
+	width:1280px;
+	height:720px; 
+	background-color:#D4A35F; 
+	border: solid white 5px; 
+	
+	position:relative;
+	margin-left:auto;
+	margin-right:auto;
+	
+	padding:20px; 
+} 
+
+.thumb {
+	height:200px;
+	padding:20px 10px;
+	display:inline-block;
+	text-align:center; 
+}
+
+
