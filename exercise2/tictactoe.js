@@ -44,17 +44,6 @@ function playerTakeTurn(e) {
 function checkGameStatus () {
 	numTurns++; // count turn
 	
-	if (numTurns == 9) {
-		gameStatus = "Tie Game";
-		console.log("Game Status: " + gameStatus); 
-		setTimeout (function () {
-			showLightBox(gameStatus, "Game over!"); 
-		}, 100
-		); 
-		console.log("The game is over, " + currentPlayer + " wins");
-		// return; 
-	} // if
-	
 	// check win
 	if (checkWin()) {
 		gameStatus = currentPlayer + " wins!";
@@ -66,6 +55,17 @@ function checkGameStatus () {
 		console.log("The game is over, " + currentPlayer + " wins");
 		// return;
 	}
+	
+	if (numTurns == 9) {
+		gameStatus = "Tie Game";
+		console.log("Game Status: " + gameStatus); 
+		setTimeout (function () {
+			showLightBox(gameStatus, "Game over!"); 
+		}, 100
+		); 
+		console.log("The game is over, " + currentPlayer + " wins");
+		// return; 
+	} // if
 
 	// switch current player
 	currentPlayer = (currentPlayer == "X" ? "O" : "X"); 
