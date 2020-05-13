@@ -224,8 +224,6 @@ function computerTakeTurn() {
 				break; 
 		} // if 
 		
-		console.log("Đm chạy ko?");
-		
 		if (cb[1] != "" && cb[5] != "" && cb[9] != "") {
 			do {
 				rand = parseInt(Math.random()*9) + 1;
