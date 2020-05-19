@@ -62,8 +62,8 @@ light green: #00a1ab
 
 #ball {
 	position:absolute;
-	left:820px;
-	top:0px;
+	left:50vh;
+	top:50vh;
 	width:25px;
 	height:25px;
 	background-color:#ff5200;
