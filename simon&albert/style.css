@@ -83,19 +83,19 @@ body {
 }
 
 .jumpup {
-	background-image: url("imgs/fencejump.png"); 
+	background-image: url("imgs/fencjump.png"); 
 }
 
 .jumpdown {
-	background-image: url("imgs/fencejumpd.png"); 
+	background-image: url("imgs/fencjumpd.png"); 
 }
 
 .jumpleft {
-	background-image: url("imgs/fencejumpl.png"); 
+	background-image: url("imgs/fencjumpl.png"); 
 }
 
 .jumpright {
-	background-image: url("imgs/fencejumpr.png"); 
+	background-image: url("imgs/fencjumpr.png"); 
 }
 
 .enemyup {
@@ -116,4 +116,20 @@ body {
 
 .bridge {
 	background-color: #800020 !important; 
+} 
+
+.message {
+	display:none;
+	position:fixed;
+	top:0px;
+	left:0px;
+	height:100%;
+	width:100%;
+	background-color:rgba(0,0,0,0.8);
+	color:white;
+	font-family:Verdana, sans-serif;
+	font-size:8em;
+	vertical-align:top;
+	text-align:center;
+	line-height:100vh;
 } 
