@@ -10,8 +10,55 @@
     
   </head>
   
-  <body>
-	<div id="gameBoard">
+  <body>	
+	<div id="header">
+		<h1 id="title">Albert & Simon's Adventure</h1>
+	</div>
+	
+	<div id="controlPanel">
+		<div id="timer" class="controls">00:00</div>
+		
+		<div onclick = "stopGame()" id="stop" class="controls">
+		Stop</div>
+		<div onclick = "pauseGame()" id="pause" class="controls">
+		Pause</div>
+		<div onclick = "resumeGame()" id="resume" class="controls">
+		Resume</div>
+	</div>
+	
+	<div id="lightbox" class="unhidden"></div>
+	
+	<div id="positionMessage">
+		<div id="boundaryMessage" class="unhidden">
+			<img id="x" src="imgs/x.png" alt="close" onclick="x()">
+			<h1 class="titletext" id="message">Welcome to Albert & Simon's Adventure</h1>
+			<p class="titletext" id="message2">Instruction:<br>Arrows Key: Moving<br>
+												Pick up the rider to jump over the fence<br>
+												Avoid the enemy at all cost!
+												</p>
+			<img id="startbutton" src="imgs/playbutton.png" alt="start" onclick="startGame()">
+			
+		</div>
+	</div>
+	
+	<div id="gameBoard" class="hidden">
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		
+		
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
 		<div></div>
 		<div></div>
 		<div></div>
@@ -23,7 +70,6 @@
 		<div></div>
 		<div></div>
 		<div></div>
-		
 		<div></div>
 		<div></div>
 		<div></div>
@@ -35,18 +81,48 @@
 		<div></div>
 		<div></div>
 		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
 		
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
 		<div></div>
 		<div></div>
 		<div></div>
 		<div></div>
 		<div></div>
 	</div> 
-   
-    <div class="message" id="lose">You Lose</div>
+	
+	<div class="message" id="lose">You Lose</div>
 	<div class="message" id="levelup">Next Level...</div>
+	<div class="message" id="youwon">You Won!</div>
    
-  <script src="game.js"></script>
+	<script src="game.js"></script>
   
   </body>
+  
+  <!--
+	Source Cited
+	
+  
+  
+  
+  -->
 </html>
